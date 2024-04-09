@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./common.css">
+  <link rel="stylesheet" media="screen and (min-width: 375px) and (max-width: 500px)" href="./mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 1440px)" href="./desktop.css">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <section role="results" class="results">
+    <section role="display" class="score">
+      <span class="heading" role="heading">Your Result</span>
+      <section role="resultCircle" class="resultCircle">
+        <span class="receivedScore">76</span>
+        <span class="totalScore"> of 100</span>
+      </section>
+      <section role="comments" class="comments">
+        <span role="commentOverview" class="commentOverview">Great</span>
+        <span role="commentComparision" class="commentComparision">You scored higher than 65% of the people who have
+          taken these tests.</span>
+      </section>
+    </section>
+    <section role="summary" class="summary">
+      <span class="summaryText">Summary</span>
+      <section class="summaryDiv reaction">
+        <section class="reactionSubDiv" role="subDiv">
+          <img src="../results-summary-component-main/assets/images/icon-reaction.svg" alt="reaction">
+          <span class="title">Reaction</span>
+        </section>
+        <div class="summaryScore">
+          <span class="yourScore">80</span>
+          <span class="totalScore"> / 100</span>
+        </div>
+      </section>
+      <section class="summaryDiv Memory">
+        <section class="reactionSubDiv" role="subDiv">
+          <img src="../results-summary-component-main/assets/images/icon-memory.svg" alt="memory">
+          <span class="title">Memory</span>
+        </section>
+        <div class="summaryScore">
+          <span class="yourScore">92</span>
+          <span class="totalScore"> / 100</span>
+        </div>
+      </section>
+      <section class="summaryDiv Verbal">
+        <section class="reactionSubDiv" role="subDiv">
+          <img src="../results-summary-component-main/assets/images/icon-verbal.svg" alt="verbal">
+          <span class="title">Verbal</span>
+        </section>
+        <div class="summaryScore">
+          <span class="yourScore">61</span>
+          <span class="totalScore"> / 100</span>
+        </div>
+      </section>
+      <section class="summaryDiv Visual">
+        <section class="reactionSubDiv" role="subDiv">
+          <img src="../results-summary-component-main/assets/images/icon-visual.svg" alt="visual">
+          <span class="title">Visual</span>
+        </section>
+        <div class="summaryScore">
+          <span class="yourScore">72</span>
+          <span class="totalScore"> / 100 </span>
+        </div>
+      </section>
+      <button type="button" class="button">Continue</button>
+    </section>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Srivalli Vajjha</a>.
+  </div>
+</body>
+
+</html>
