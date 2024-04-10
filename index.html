@@ -31,62 +31,67 @@
 </head>
 
 <body>
-  <section role="results" class="results">
-    <section role="display" class="score">
-      <span class="heading" role="heading">Your Result</span>
-      <section role="resultCircle" class="resultCircle">
-        <span class="receivedScore">76</span>
-        <span class="totalScore"> of 100</span>
+  <section role="region" aria-label="Results Card" class="results">
+    <section role="region" aria-label="Score" class="score">
+      <span class="heading" role="text">Your Result</span>
+      <section role="region" aria-label="Your Result is" class="resultCircle">
+        <span class="receivedScore" role="text">76</span>
+        <span class="totalScore" role="text"> of 100</span>
       </section>
-      <section role="comments" class="comments">
-        <span role="commentOverview" class="commentOverview">Great</span>
-        <span role="commentComparision" class="commentComparision">You scored higher than 65% of the people who have
+      <section role="region" aria-label="Comments" class="comments">
+        <span role="text" class="commentOverview">Great</span>
+        <span role="text" class="commentComparision">You scored higher than 65% of the people who have
           taken these tests.</span>
       </section>
     </section>
-    <section role="summary" class="summary">
-      <span class="summaryText">Summary</span>
-      <section class="summaryDiv reaction">
-        <section class="reactionSubDiv" role="subDiv">
-          <img src="./assets/images/icon-reaction.svg" alt="reaction">
-          <span class="title">Reaction</span>
+    <section role="region" aria-label="Summary" class="summary">
+      <span role="text" class="summaryText">Summary</span>
+
+      <section id="reaction" role="region" aria-label="Reaction Summary" class="summaryDiv reaction">
+        <section role="region" aria-label="reaction subdiv" class="SubDiv">
+          <img role="presentation" aria-labelledby="reaction" src="./assets/images/icon-reaction.svg" alt="reaction">
+          <span role="text" class="title">Reaction</span>
         </section>
-        <div class="summaryScore">
-          <span class="yourScore">80</span>
-          <span class="totalScore"> / 100</span>
+        <div role="region"  aria-label="your reaction score" class="summaryScore">
+          <span role="text" class="yourScore">80</span>
+          <span role="text" class="totalScore"> / 100</span>
         </div>
       </section>
-      <section class="summaryDiv Memory">
-        <section class="reactionSubDiv" role="subDiv">
-          <img src="./assets/images/icon-memory.svg" alt="memory">
-          <span class="title">Memory</span>
+
+      <section id="memory" role="region" aria-label="Memory Summary" class="summaryDiv Memory">
+        <section role="region" aria-label="memory subdiv" class="SubDiv">
+          <img role="presentation" aria-labelledby="memory" src="./assets/images/icon-memory.svg" alt="memory">
+          <span role="text" class="title">Memory</span>
         </section>
-        <div class="summaryScore">
-          <span class="yourScore">92</span>
-          <span class="totalScore"> / 100</span>
+        <div role="region" aria-label="your memory score" class="summaryScore">
+          <span role="text" class="yourScore">92</span>
+          <span role="text" class="totalScore"> / 100</span>
         </div>
       </section>
-      <section class="summaryDiv Verbal">
-        <section class="reactionSubDiv" role="subDiv">
-          <img src="./assets/images/icon-verbal.svg" alt="verbal">
-          <span class="title">Verbal</span>
+
+
+      <section id="Verbal" role="region" aria-label="Verbal Summary" class="summaryDiv Verbal">
+        <section role="region" aria-label="Verbal Sub Section" class="SubDiv">
+          <img role="presentation" aria-labelledby="Verbal" src="./assets/images/icon-verbal.svg" alt="verbal">
+          <span role="text" class="title">Verbal</span>
         </section>
-        <div class="summaryScore">
-          <span class="yourScore">61</span>
-          <span class="totalScore"> / 100</span>
+        <div role="region" aria-label="your verbal score" class="summaryScore">
+          <span role="text" class="yourScore">61</span>
+          <span role="text" class="totalScore"> / 100</span>
         </div>
       </section>
-      <section class="summaryDiv Visual">
-        <section class="reactionSubDiv" role="subDiv">
-          <img src="./assets/images/icon-visual.svg" alt="visual">
-          <span class="title">Visual</span>
+
+      <section id="Visual" role="region" aria-label="Visual Summary" class="summaryDiv Visual">
+        <section role="region" aria-label="Visual Sub Section" class="SubDiv">
+          <img role="presentation" aria-labelledby="Visual" src="./assets/images/icon-visual.svg" alt="visual">
+          <span role="text" class="title">Visual</span>
         </section>
-        <div class="summaryScore">
-          <span class="yourScore">72</span>
-          <span class="totalScore"> / 100 </span>
+        <div role="region" aria-label="your Visual score" class="summaryScore">
+          <span  role="text" class="yourScore">72</span>
+          <span role="text" class="totalScore"> / 100 </span>
         </div>
       </section>
-      <button type="button" class="button">Continue</button>
+      <button aria-label="continue" type="button" class="button">Continue</button>
     </section>
   </section>
 
